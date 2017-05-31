@@ -1,0 +1,62 @@
+@import "http://www.finefinefine.jp/wp/wp-content/themes/mystique/style.css";
+@import "http://www.finefinefine.jp/date/2010/10/?mystique=css";
+#header-wrapper {
+ height: 60px;
+}
+#header {
+ height: 60px;
+}
+#site-title {
+ padding: 10px 0 0 0;
+}
+h5 {
+ margin-top: 20px;
+}
+#sample {
+ margin-top: 20px;
+}
+#main {
+ clear: left;
+ margin: 20px auto;
+ padding: 5px 20px;
+ width: 900px;
+}
+#tab li {
+ float: left;
+ padding: 10px;
+ list-style: none;
+ cursor: pointer;
+ background: rgba(132,255,255,0.9);
+ color: #000000;
+}
+#tab li.select {
+ background: rgba(255,255,127,0.9);
+ color: #000000;
+}
+
+.disnon {
+ display: none;
+}
+.content_wrap {
+ clear: left;
+ width: 400px;
+ height: 375px;
+ font-size: 18px;
+ text-align: center;
+ line-height: 20px;
+ background: #fff;
+ color: #000;
+}
+
+div.itemlist{
+  height:450;
+  position: relative;
+
+}
+
+div.tablist{
+  position: absolute;
+  left: 30;
+  bottom: 0;
+
+}

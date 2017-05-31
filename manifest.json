@@ -1,0 +1,13 @@
+{
+	"name": "Our_Impression",
+	"version": "1.0",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": "icon_19.png",
+		"default_title": "List up href"
+
+	},
+	"permissions": ["http://*/*", "https://*/*", "activeTab", "tabs"],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
