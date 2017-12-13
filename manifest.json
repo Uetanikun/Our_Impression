@@ -1,13 +1,17 @@
 {
-	"name": "Our_Impression",
-	"version": "1.0",
-	"manifest_version": 2,
-	"browser_action": {
-		"default_popup": "popup.html",
-		"default_icon": "icon_19.png",
-		"default_title": "List up href"
-
-	},
-	"permissions": ["http://*/*", "https://*/*", "activeTab", "tabs"],
-	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  "name": "Our_Impression",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Review Analyze system　is forcusing on emotional word",
+  "background": { "scripts": ["js/background.js"] },
+  "permissions": [
+    "http://*/*", "https://*/*", "activeTab", "tabs"
+  ],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "page_action":
+  {
+    "default_icon": "icon_19.png",
+    "default_title": "Analysis Review",
+    "default_popup": "popup.html"
+ }
 }

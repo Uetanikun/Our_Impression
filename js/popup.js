@@ -52,7 +52,7 @@ function returnDataSHow(){
 function sendUrl(id){ //サーバとXMLHttpRequestによるPOST通信を行う。tab.url;
   xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = returnDataSHow;
-  xmlhttp.open("POST","http://aitech.ac.jp/hishida/ana01/Act_Chrome/test_XMLhttp.php");
+  xmlhttp.open("POST","http://aitech.ac.jp/hishida/ana01/Act_Chrome/XMLhttp.php");
   xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
   xmlhttp.send("id=" + id);
 }
