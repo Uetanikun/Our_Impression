@@ -52,7 +52,7 @@ function returnDataSHow(){
 function sendUrl(id){ //サーバとXMLHttpRequestによるPOST通信を行う。tab.url;
   xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = returnDataSHow;
-  xmlhttp.open("POST","http://aitech.ac.jp/hishida/ana01/Act_Chrome/XMLhttp.php");
+  xmlhttp.open("POST","http://aitech.ac.jp/hishida/ana01/Our_Impression/XMLhttp.php");
   xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
   xmlhttp.send("id=" + id);
 }
@@ -80,7 +80,7 @@ function Output(){
     resArray = ItemArray[counter].split("^");
     item[counter] = resArray[0]; //商品名
     url[counter] = resArray[1]; //解析URL
-    Result[counter] = "<li class=\"list9-count\"><a href=\"http://aitech.ac.jp/hishida/ana01/Act_Chrome/MLanalyze.php?url="+url[counter]+"\" target=\"_blank\" style=\"font-size:15px;\">"+item[counter]+"</a></li>";
+    Result[counter] = "<li class=\"list9-count\"><a href=\"http://aitech.ac.jp/hishida/ana01/Our_Impression/MLanalyze.php?url="+url[counter]+"\" target=\"_blank\" style=\"font-size:15px;\">"+item[counter]+"</a></li>";
     console.log(item[counter]);
     if(count-1 == counter){//配列の一番最後まできたとき。
       j = 100;//ループ強制終了
