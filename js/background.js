@@ -10,8 +10,8 @@ if (tab.url.indexOf("http://kakaku.com/") > -1) {
 }
 
 //トリップの対象ページか監視
-if (tab.url.indexOf("http://kakaku.com/") > -1) {
-  if (tab.url.indexOf("itemlist.aspx") > -1) {
+if (tab.url.indexOf("https://www.tripadvisor.jp/") > -1) {
+  if (tab.url.indexOf("Attractions-") > -1) {
     // ... show the page action.
     chrome.pageAction.show(tabId);
   }
