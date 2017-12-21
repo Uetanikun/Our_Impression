@@ -12,9 +12,13 @@ if (tab.url.indexOf("http://kakaku.com/") > -1) {
 //トリップの対象ページか監視
 if (tab.url.indexOf("https://www.tripadvisor.jp/Attractions-g") > -1) {
   if (tab.url.indexOf("Activities") > -1) {
-    // ... show the page action.
     chrome.pageAction.show(tabId);
   }
+}
+
+//食べログの対象ページか監視
+if (tab.url.indexOf("https://tabelog.com/rstLst") > -1) {
+    chrome.pageAction.show(tabId);
 }
 };
 
